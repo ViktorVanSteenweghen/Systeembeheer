@@ -1,0 +1,1 @@
+rsync -avz -e 'ssh -p 22345' --delete /etc/* r0674086@193.191.177.1:/home/LDAP/r0674086/server_backup
