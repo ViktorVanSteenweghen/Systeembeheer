@@ -6,7 +6,7 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-zone "domain-name.com" {
+zone "viktor-vansteenweghen.sb.uclllabs.be" {
         type master;
         file "/etc/bind/db.viktor";
         allow-transfer { 193.191.176.254; 193.191.177.4; };
