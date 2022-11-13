@@ -25,3 +25,9 @@ zone "ns2.uclllabs.be" IN {
         file "/etc/bind/db.ns2";
         masters { 193.191.176.230; };
 };
+
+zone "jonas-vanhaeken.sb.uclllabs.be" IN {
+        type slave;
+        file "/etc/bind/db.jonas-vanhaeken.sb.uclllabs.be";
+        masters { 193.191.176.230; };
+};
