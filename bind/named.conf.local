@@ -6,3 +6,9 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+zone "domain-name.com" {
+        type master;
+        file "/etc/bind/db.viktor";
+        allow-transfer { 193.191.176.254; 193.191.177.4; };
+        also-notify { 10.1.1.10; };
+};
