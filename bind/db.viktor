@@ -3,7 +3,7 @@
 ;
 $TTL	604800
 @	IN	SOA	ns.viktor-vansteenweghen.sb.uclllabs.be. root.viktor-vansteenweghen.sb.uclllabs.be. (
-			    250		; Serial
+			    251		; Serial
 			    250		; Refresh
 			    250		; Retry
 			    250		; Expire
