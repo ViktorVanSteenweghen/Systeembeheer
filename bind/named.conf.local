@@ -12,3 +12,16 @@ zone "viktor-vansteenweghen.sb.uclllabs.be" {
         allow-transfer { 193.191.176.254; 193.191.177.4; };
         also-notify { 193.191.176.254; 193.191.177.4; };
 };
+
+zone "ns1.uclllabs.be" {
+        type slave;
+        file "/etc/bind/db.ns1";
+        masters { 193.191.176.230; };
+};
+
+
+zone "ns2.uclllabs.be" {
+        type slave;
+        file "/etc/bind/db.ns2";
+        masters { 193.191.176.230; };
+};
