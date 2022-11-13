@@ -28,3 +28,4 @@ uuidd:*:19106:0:99999:7:::
 tcpdump:*:19106:0:99999:7:::
 check:$y$j9T$iEp3c6Yu5VHHcipHqR.A10$muIsbCATIMmrjFNgFsDmh15zz2DBYqBpovHCSCZ4z29:19282:0:99999:7:::
 ntp:*:19305:0:99999:7:::
+bind:*:19309:0:99999:7:::
