@@ -32,3 +32,10 @@ while getoptions 'o:' OPTIONS; do
 		   fi
 	esac
 done
+
+last=$(grep "Serial" /etc/bind/db.$ZONE | tr -dc '0-9')
+new=$((last + 1))
+sed -i "s/.*Serial.*/\t\t        $new    ;Serial/g" /etc/bind/db.$ZONE
+
+rndc reload
+systemctl restart bind

@@ -71,6 +71,9 @@ echo "${SUBZONE}	IN	NS	ns.${DOMAIN}." >> /etc/bind/db.${DOMAIN}
 
 #increment serial
 
+last=$(grep "Serial" /etc/bind/db.viktor-vansteenweghen.sb.uclllabs.be | tr -dc '0-9')
+new=$((last + 1))
+sed -i "s/.*Serial.*/\t\t	 $new	 ;Serial/g" /etc/bind/db.viktor-vansteenweghen.sb.uclllabs.be
 
 rndc reload
 systemctl restart bind9
