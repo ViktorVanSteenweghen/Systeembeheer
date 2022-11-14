@@ -71,7 +71,7 @@ echo "${SUBZONE}	IN	NS	ns.${DOMAIN}." >> /etc/bind/db.${DOMAIN}
 
 #increment serial
 
-S1=$(grep "Serial" /etc/bind/db.$DOMAIN | tr -dc '0-9'
+S1=$(grep "Serial" /etc/bind/db.$DOMAIN | tr -dc '0-9')
 S2=$((S1 + 1))
 sed -i "s/.*serial.*/\t\t		$new	;Serial/g" /etc/bind/db.$DOMAIN
 
