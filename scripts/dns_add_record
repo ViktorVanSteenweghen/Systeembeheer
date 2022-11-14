@@ -6,12 +6,18 @@ IP=$3
 ZONE=$4
 
 while getoptions 'o:' OPTIONS; do
-    case "$OPTIONS" in	
-       o) if [$RTYPE == A ]
-	     then
-		    echo "Writing an A record
-		    echo ";Name Server Records" >>/etc/bind/db.$ZONE
-		    echo "${NAME}	IN	A	${IP}
-		    echo "Yes, $RTYPE $NAME $ZONE"
+	case "$OPTIONS" in
+		o) if [$RTYPE == A ]
+			then
+				echo "Writing record"
+				echo ";Name Server Records"		 >>/etc/bind/db.$ZONE
+				echo "${NAME}	IN	A	${IP}    >>/etc/bind/db.$ZONE
+				echo "Yes, $RTYPE $NAME $ZONE"
 
+		   elif [$RTYPE == MX ]
+			then
+				echo "Creating record"
+				echo ";Name Server Records"		 >>/etc/bind/db.$ZONE
+				echo "${NAME}   IN      A       ${IP}    >>/etc/bind/db.$ZONE
+				echo "Yes, $RTYPE $NAME $ZONE"
 
