@@ -1,0 +1,12 @@
+zone "aub.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.aub.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "werkthetecht?.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.werkthetecht?.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "werkthet.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.werkthet.viktor-vansteenweghen.sb.uclllabs.be";
+}; 

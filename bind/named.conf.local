@@ -5,28 +5,28 @@
 // Consider adding the 1918 zones here, if they are not used in your
 // organization
 //include "/etc/bind/zones.rfc1918";
-
+include "/etc/bind/named.conf.mrt-zones";
 zone "viktor-vansteenweghen.sb.uclllabs.be" {
         type master;
-        file "/etc/bind/db.viktor";
+        file "/etc/bind/db.viktor-vansteenweghen.sb.uclllabs.be";
         allow-transfer { 193.191.176.254; 193.191.177.4; };
         also-notify { 193.191.176.254; 193.191.177.4; };
 };
 
-zone "ns1.uclllabs.be" IN {
+zone "ns1.uclllabs.be" {
         type slave;
         file "/etc/bind/db.ns1";
         masters { 193.191.176.230; };
 };
 
 
-zone "ns2.uclllabs.be" IN {
+zone "ns2.uclllabs.be" {
         type slave;
         file "/etc/bind/db.ns2";
         masters { 193.191.176.230; };
 };
 
-zone "jonas-vanhaeken.sb.uclllabs.be" IN {
+zone "jonas-vanhaeken.sb.uclllabs.be" {
         type slave;
         file "/etc/bind/db.jonas-vanhaeken.sb.uclllabs.be";
         masters { 193.191.176.230; };
