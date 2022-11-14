@@ -27,3 +27,6 @@ while getoptions 'o:' OPTIONS; do
 				echo ";Name Server CNAME"		>>/etc/bind/db.$ZONE
 				echo "${NAME}   IN      CNAME       ${IP}"    >>/etc/bind/db.$ZONE
 				echo "Yes, $RTYPE $NAME $ZONE"
+		   fi
+	esac
+done
