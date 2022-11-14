@@ -11,13 +11,19 @@ while getoptions 'o:' OPTIONS; do
 			then
 				echo "Writing record"
 				echo ";Name Server Records"		 >>/etc/bind/db.$ZONE
-				echo "${NAME}	IN	A	${IP}    >>/etc/bind/db.$ZONE
+				echo "${NAME}	IN	A	${IP}"    >>/etc/bind/db.$ZONE
 				echo "Yes, $RTYPE $NAME $ZONE"
 
 		   elif [$RTYPE == MX ]
 			then
 				echo "Creating record"
 				echo ";Name Server Records"		 >>/etc/bind/db.$ZONE
-				echo "${NAME}   IN      A       ${IP}    >>/etc/bind/db.$ZONE
+				echo "${NAME}   IN      A       ${IP}"    >>/etc/bind/db.$ZONE
 				echo "Yes, $RTYPE $NAME $ZONE"
 
+		   elif [$RTYPE == CNAME ]
+			then
+				echo "Creating CNAME record"
+				echo ";Name Server CNAME"		>>/etc/bind/db.$ZONE
+				echo "${NAME}   IN      CNAME       ${IP}"    >>/etc/bind/db.$ZONE
+				echo "Yes, $RTYPE $NAME $ZONE"
