@@ -10,3 +10,7 @@ zone "werkthet.viktor-vansteenweghen.sb.uclllabs.be" {
 	type master;
 	file "/etc/bind/db.werkthet.viktor-vansteenweghen.sb.uclllabs.be";
 }; 
+zone "checktest.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.checktest.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
