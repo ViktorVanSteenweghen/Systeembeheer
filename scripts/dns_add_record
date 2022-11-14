@@ -1,41 +1,46 @@
 #!/bin/bash
+ZEVER=$1
+RTYPE=$2
+RNAME=$3
+IP=$4
+ZONE=$5
 
-RTYPE=$1
-RNAME=$2
-IP=$3
-ZONE=$4
-
-while getoptions 'o:' OPTIONS; do
+while getopts 't:' OPTIONS; do
 	case "$OPTIONS" in
-		o) if [$RTYPE == A ]
+		t)
+		   if [ $RTYPE == A ]
 			then
 				echo "Writing record"
 				echo ";Name Server Records"		 >>/etc/bind/db.$ZONE
-				echo "${NAME}	IN	A	${IP}"    >>/etc/bind/db.$ZONE
-				echo "Yes, $RTYPE $NAME $ZONE"
+				echo "${RNAME}	IN	A	${IP}"    >>/etc/bind/db.$ZONE
+				echo "Yes, $RTYPE $RNAME $ZONE"
 
-		   elif [$RTYPE == MX ]
+		   elif [ $RTYPE == MX ]
 			then
 				echo "Creating record"
 				echo ";Name Server Records"		 >>/etc/bind/db.$ZONE
-				echo "${NAME}   IN      A       ${IP}"    >>/etc/bind/db.$ZONE
-				echo "Yes, $RTYPE $NAME $ZONE"
+				echo "${RNAME}   IN      A       ${IP}"    >>/etc/bind/db.$ZONE
+				echo "Yes, $RTYPE $RNAME $ZONE"
 				echo "Writing mx record"
 				echo ";Name Server MX"			>>/etc/bind/db.$ZONE
-				echo "@ IN	MX	${NAME}.${ZONE}"  >>/etc/bind/db.$ZONE
-		   elif [$RTYPE == CNAME ]
+				echo "@ IN	MX	${RNAME}.${ZONE}"  >>/etc/bind/db.$ZONE
+		   elif [ $RTYPE == CNAME ]
 			then
 				echo "Creating CNAME record"
 				echo ";Name Server CNAME"		>>/etc/bind/db.$ZONE
-				echo "${NAME}   IN      CNAME       ${IP}"    >>/etc/bind/db.$ZONE
-				echo "Yes, $RTYPE $NAME $ZONE"
-		   fi
+				echo "${RNAME}   IN      CNAME       ${IP}"    >>/etc/bind/db.$ZONE
+				echo "Yes, $RTYPE $RNAME $ZONE"
+		  else
+				echo "$RTYPE"
+		
+		  fi
 	esac
 done
+shift "$(($OPTIND -1))"
 
 last=$(grep "Serial" /etc/bind/db.$ZONE | tr -dc '0-9')
 new=$((last + 1))
 sed -i "s/.*Serial.*/\t\t        $new    ;Serial/g" /etc/bind/db.$ZONE
 
 rndc reload
-systemctl restart bind
+systemctl restart bind9
