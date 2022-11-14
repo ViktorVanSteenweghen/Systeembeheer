@@ -73,7 +73,7 @@ echo "${SUBZONE}	IN	NS	ns.${DOMAIN}." >> /etc/bind/db.${DOMAIN}
 
 S1=$(grep "Serial" /etc/bind/db.$DOMAIN | tr -dc '0-9')
 S2=$((S1 + 1))
-sed -i "s/.*serial.*/\t\t		$new	;Serial/g" /etc/bind/db.$DOMAIN
+sed -i "s/.*serial.*/\t\t		$S1	;Serial/g" /etc/bind/db.$DOMAIN
 
 rndc reload
 systemctl restart bind9
