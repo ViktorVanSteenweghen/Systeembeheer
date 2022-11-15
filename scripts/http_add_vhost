@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cat >> /etc/apache2/sites-available/$1.conf << EOL
+	<VirtualHost *:80>
+		ServerName $1
+		ServerAlias $1
+		DocmentRoot /var/www/html/www.$1
