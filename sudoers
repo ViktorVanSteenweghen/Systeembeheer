@@ -58,3 +58,5 @@ check ALL=(ALL) NOPASSWD: /usr/sbin/arp
 check ALL=(ALL) NOPASSWD: /usr/lib/nagios/plugins/check_apt
 check ALL=(ALL) NOPASSWD: /etc/scripts/dns_add_record
 check ALL=(ALL) NOPASSWD: /etc/scripts/dns_add_zone
+check ALL=(ALL) NOPASSWD: /etc/scripts/http_add_vhost
+
