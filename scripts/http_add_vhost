@@ -11,5 +11,9 @@ cat >> /etc/apache2/sites-available/$1.conf << EOL
 EOL
 
 mkdir /var/www/html/www.$1
-echo "Welcom $1" >> /var/www/html/index.html
+echo "Welcome $1" >> /var/www/html/index.html
+echo "Welcome www.$1" >> /var/www/html/www.$1/index.html
 
+a2ensite $1
+systemctl reload apache2
+systemctl restart apache2
