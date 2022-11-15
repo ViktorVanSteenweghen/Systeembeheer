@@ -23,7 +23,7 @@ while getopts 't:' OPTIONS; do
 				echo "Yes, $RTYPE $RNAME $ZONE"
 				echo "Writing mx record"
 				echo ";Name Server MX"			>>/etc/bind/db.$ZONE
-				echo "@ IN	MX	${RNAME}.${ZONE}"  >>/etc/bind/db.$ZONE
+				echo "@	IN	MX	10 ${RNAME}.${ZONE}."  >>/etc/bind/db.$ZONE
 		   elif [ $RTYPE == CNAME ]
 			then
 				echo "Creating CNAME record"
