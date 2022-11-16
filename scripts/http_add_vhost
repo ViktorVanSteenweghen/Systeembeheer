@@ -15,7 +15,7 @@ EOL
 
 mkdir /var/www/html/$1
 echo "welcome vhost_name" >> /var/www/html/$1/index.html
-echo "welcome www.$(echo "$1" | cut -d '.' -f 1-1)" >> /var/www/html/$1/index.html
+echo "welcome www.$(echo "$1" | cut -d '.' -f 1-2)" >> /var/www/html/$1/index.html
 a2ensite $1
 systemctl reload apache2
 systemctl restart apache2
