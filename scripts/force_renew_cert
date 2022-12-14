@@ -1,0 +1,2 @@
+certbot --staging -d viktor-vansteenweghen.sb.uclllabs.be --force-renewal
+

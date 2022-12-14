@@ -1,0 +1,21 @@
+#!/bin/bash
+NAME=$(echo "$1" | cut -d '.' -f 1)
+echo "$NAME"
+
+cat >> /etc/apache2/sites-available/$1.conf << EOL
+	<VirtualHost *:80>
+		ServerName $1
+		ServerAlias $1
+		DocumentRoot /var/www/html/$1
+		ErrorLog ${APACHE_LOG_DIR}/$1-error.log
+		CustomLog ${APACHE_LOG_DIR}/$1-acces.log combined
+	</VirtualHost>
+EOL
+
+mkdir /var/www/html/$1
+echo "welcome vhost_name" >> /var/www/html/$1/index.html
+echo "welcome www.$(echo "$1" | cut -d '.' -f 1)" >> /var/www/html/$1/index.html
+a2ensite $1
+systemctl reload apache2
+systemctl restart apache2
+ 

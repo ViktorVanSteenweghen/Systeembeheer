@@ -3,7 +3,7 @@
 ;
 $TTL	604800
 @	IN	SOA	ns.viktor-vansteenweghen.sb.uclllabs.be. root.viktor-vansteenweghen.sb.uclllabs.be. (
-			 1108	 ;Serial
+			 1500	 ;Serial
 			    250		; Refresh
 			    250		; Retry
 			    250		; Expire
@@ -724,3 +724,30 @@ subzoneohch5j	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
 subzoneeele0t	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
 subzonethoht2	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
 subzonelaem9u	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneteko7t	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzonelogie4	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzonedusi1a	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneohmee9	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneboos6w	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneeenai1	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzonewu1jum	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzonereigu7	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneiing7i	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneeetoo4	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneic1ur0	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneumie4u	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneohth3s	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneaac7oh	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzonede3xoh	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneaesae4	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneshaip6	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzonexo5osh	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneohw0oh	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzonechu9ai	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneaeng6j	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneuija0g	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzonepho9ah	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneepah0u	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzonethoh8a	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneahvu3i	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneohzi0f	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.

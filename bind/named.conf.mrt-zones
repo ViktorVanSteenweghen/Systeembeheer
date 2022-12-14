@@ -2666,3 +2666,111 @@ zone "subzonelaem9u.viktor-vansteenweghen.sb.uclllabs.be" {
 	type master;
 	file "/etc/bind/db.subzonelaem9u.viktor-vansteenweghen.sb.uclllabs.be";
 }; 
+zone "subzoneteko7t.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneteko7t.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzonelogie4.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzonelogie4.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzonedusi1a.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzonedusi1a.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneohmee9.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneohmee9.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneboos6w.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneboos6w.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneeenai1.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneeenai1.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzonewu1jum.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzonewu1jum.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzonereigu7.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzonereigu7.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneiing7i.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneiing7i.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneeetoo4.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneeetoo4.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneic1ur0.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneic1ur0.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneumie4u.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneumie4u.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneohth3s.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneohth3s.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneaac7oh.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneaac7oh.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzonede3xoh.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzonede3xoh.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneaesae4.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneaesae4.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneshaip6.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneshaip6.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzonexo5osh.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzonexo5osh.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneohw0oh.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneohw0oh.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzonechu9ai.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzonechu9ai.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneaeng6j.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneaeng6j.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneuija0g.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneuija0g.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzonepho9ah.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzonepho9ah.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneepah0u.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneepah0u.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzonethoh8a.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzonethoh8a.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneahvu3i.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneahvu3i.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneohzi0f.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneohzi0f.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
