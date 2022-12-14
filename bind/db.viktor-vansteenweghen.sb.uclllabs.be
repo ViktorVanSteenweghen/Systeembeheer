@@ -3,7 +3,7 @@
 ;
 $TTL	604800
 @	IN	SOA	ns.viktor-vansteenweghen.sb.uclllabs.be. root.viktor-vansteenweghen.sb.uclllabs.be. (
-			 1500	 ;Serial
+			 5804	 ;Serial
 			    250		; Refresh
 			    250		; Retry
 			    250		; Expire
@@ -751,3 +751,8 @@ subzoneepah0u	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
 subzonethoh8a	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
 subzoneahvu3i	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
 subzoneohzi0f	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneuf6tee	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneooh8de	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzoneoung2f	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzonebie6at	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.
+subzonegei1co	IN	NS	ns.viktor-vansteenweghen.sb.uclllabs.be.

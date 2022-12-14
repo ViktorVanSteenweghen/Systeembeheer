@@ -57,3 +57,5 @@ tcpdump:!::
 check:!::
 incron:!::
 ntp:!::
+bind:!::
+ftp:!::

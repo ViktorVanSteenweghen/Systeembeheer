@@ -1,0 +1,42 @@
+#!/bin/bash
+
+#Start firewall
+start_firewall() {
+    iptables-restore < /etc/iptables/rules.v4
+    ip6tables-restore < /etc/iptables/rules.v6
+
+    echo 0 > /proc/sys/net/ipv4/ip_forward
+    echo 1 > /proc/sys/net/ipv4/tcp_syncookies
+}
+
+#Stop firewall
+stop_firewall() {
+    iptables -F
+    ip6tables -F
+
+    echo 1 > /proc/sys/net/ipv4/ip_forward
+    echo 0 > /proc/sys/net/ipv4/tcp_syncookies
+}
+
+#Restart firewall
+restart_firewall() {
+    stop_firewall
+    start_firewall
+}
+
+#Command line arguments handler
+case "$1" in
+  start)
+    start_firewall
+    ;;
+  stop)
+    stop_firewall
+    ;;
+  restart)
+    restart_firewall
+    ;;
+  *)
+    echo "Usage: firewall {start|stop|restart}"
+    exit 1
+    ;;
+esac

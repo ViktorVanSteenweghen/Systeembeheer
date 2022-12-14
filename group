@@ -58,3 +58,5 @@ check:x:1000:
 incron:x:118:
 ntp:x:119:
 bind:x:120:
+ftp:x:121:
+mystery1_2014:x:1001:

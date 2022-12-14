@@ -2774,3 +2774,23 @@ zone "subzoneohzi0f.viktor-vansteenweghen.sb.uclllabs.be" {
 	type master;
 	file "/etc/bind/db.subzoneohzi0f.viktor-vansteenweghen.sb.uclllabs.be";
 }; 
+zone "subzoneuf6tee.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneuf6tee.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneooh8de.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneooh8de.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzoneoung2f.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzoneoung2f.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzonebie6at.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzonebie6at.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
+zone "subzonegei1co.viktor-vansteenweghen.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.subzonegei1co.viktor-vansteenweghen.sb.uclllabs.be";
+}; 
